@@ -17,7 +17,7 @@ public class SparkFlightApp {
 
 
 
-
+    private static final String QUOTE = "\"";
 
 
 
