@@ -87,7 +87,7 @@ public class SparkFlightApp {
                     Tuple2<Integer, Integer> flightKey = flight._1;
 
 
-
+                }).saveAsTextFile(args[0]);
 
 
 }
