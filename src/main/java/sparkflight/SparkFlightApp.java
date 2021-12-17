@@ -14,7 +14,7 @@ import static scala.None.iterator;
 
 public class SparkFlightApp {
 
-
+    private static final String FLIGHT_DELIMITER = ",";
 
 
     private static final String QUOTE = "\"";
