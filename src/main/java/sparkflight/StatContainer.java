@@ -3,7 +3,7 @@
 import java.io.Serializable;
 
 public class StatContainer implements Serializable {
-
+    private float max;
     private int cancelled;
 
 
