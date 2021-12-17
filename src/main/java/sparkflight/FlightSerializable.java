@@ -1,4 +1,4 @@
-
+package sparkflight;
 
 
 import scala.Serializable;
@@ -19,7 +19,7 @@ public class FlightSerializable implements Serializable {
 
     public Integer getDestinationAirportId() {
         return destinationAirportId;
-
+    }
 
     public Integer getOriginAirportId() {
         return originAirportId;
