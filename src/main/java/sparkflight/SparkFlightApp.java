@@ -51,7 +51,7 @@ public class SparkFlightApp {
         );
     }
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("lab3");
+
 
         JavaRDD<String> flights = dataPrepare(sc, args[1]);
         JavaRDD<String> airports = dataPrepare(sc, args[2]);
