@@ -66,7 +66,7 @@ public class SparkFlightApp {
 
 
 //                    for (FlightSerializable flight : flightsArray) {
-
+//                        cancelledCounter += (flight.isCancelled()) ? 1 : Constants.ZERO;
 
 //
 
