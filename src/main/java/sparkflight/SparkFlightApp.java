@@ -28,7 +28,7 @@ public class SparkFlightApp {
 
 
 
-
+        return flights.mapToPair(
 
 
 
