@@ -26,7 +26,7 @@ public class StatContainer implements Serializable {
         return counter;
 
 
-
+    public StatContainer(float max, int cancelled, int delayed, int counter) {
 
         this.cancelled = cancelled;
 
