@@ -6,7 +6,7 @@ public class StatContainer implements Serializable {
     private float max;
     private int cancelled;
     private int delayed;
-
+    private int counter;
     private static final String PATTERN = "MaxDelay: %f, CancelledPercent: %f, DelayedPercent: %f";
 
 
