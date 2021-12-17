@@ -60,7 +60,7 @@ public class SparkFlightApp {
         final Broadcast<Map<Integer, String>> airportBroadcasted = sc.broadcast(airportRDD.collectAsMap());
 //        flightRDD.groupByKey().mapValues(
 
-//                    float cancelledCounter = Constants.ZERO;
+
 //                    float delayedCounter = Constants.ZERO;
 
 //                    int counter = Constants.ZERO;
