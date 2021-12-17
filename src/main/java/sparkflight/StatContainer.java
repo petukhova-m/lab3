@@ -12,7 +12,7 @@ public class StatContainer implements Serializable {
 
     public float getMax() {
         return max;
-    }
+
 
     public int getCancelled() {
         return cancelled;
@@ -40,7 +40,7 @@ public class StatContainer implements Serializable {
     }
     public static StatContainer add(StatContainer a, StatContainer b) {
         return new StatContainer(Float.max(a.getMax(), b.getMax()),
-
+                a.getCancelled() + b.getCancelled(),
                 a.getDelayed() + b.getDelayed(),
                 a.getCounter() + b.getCounter());
     }
