@@ -19,7 +19,7 @@
 
     public Integer getDestinationAirportId() {
         return destinationAirportId;
-    }
+
 
     public Integer getOriginAirportId() {
         return originAirportId;
