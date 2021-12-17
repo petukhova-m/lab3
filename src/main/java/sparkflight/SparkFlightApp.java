@@ -68,7 +68,7 @@ public class SparkFlightApp {
 //                    for (FlightSerializable flight : flightsArray) {
 
 
-
+//
 
 //                            max = Float.max(max, delay);
 
