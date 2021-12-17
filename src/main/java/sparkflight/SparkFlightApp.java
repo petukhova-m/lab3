@@ -59,7 +59,7 @@ public class SparkFlightApp {
         JavaPairRDD<Integer, String> airportRDD = airportToPair(airports);
         final Broadcast<Map<Integer, String>> airportBroadcasted = sc.broadcast(airportRDD.collectAsMap());
 //        flightRDD.groupByKey().mapValues(
-
+//                flightsArray ->{
 
 //                    float delayedCounter = Constants.ZERO;
 
