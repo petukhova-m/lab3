@@ -39,7 +39,7 @@ public class SparkFlightApp {
                             new FlightSerializable(originAirport, destinationAirport, delay, cancelled));
 
         );
-
+    }
 
 
 
