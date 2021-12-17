@@ -56,7 +56,7 @@ public class SparkFlightApp {
 
 
 
-
+        JavaPairRDD<Integer, String> airportRDD = airportToPair(airports);
 
 //        flightRDD.groupByKey().mapValues(
 
