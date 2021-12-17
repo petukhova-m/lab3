@@ -52,7 +52,7 @@ public class SparkFlightApp {
 
     public static void main(String[] args) {
 
-
+        JavaSparkContext sc = new JavaSparkContext(conf);
 
 
 
