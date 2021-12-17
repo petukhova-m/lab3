@@ -10,7 +10,7 @@ import java.util.Map;
 
 import java.util.Iterator;
 
-
+import static scala.None.iterator;
 
 public class SparkFlightApp {
 
