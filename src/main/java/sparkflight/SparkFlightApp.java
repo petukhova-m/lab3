@@ -85,7 +85,7 @@ public class SparkFlightApp {
 
 
                     Tuple2<Integer, Integer> flightKey = flight._1;
-
+                    Map<Integer, String> value = airportBroadcasted.value();
 
                 }).saveAsTextFile(args[0]);
 
