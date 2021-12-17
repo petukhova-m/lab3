@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class StatContainer implements Serializable {
 
-
+    private int cancelled;
 
 
     private static final String PATTERN = "MaxDelay: %f, CancelledPercent: %f, DelayedPercent: %f";
