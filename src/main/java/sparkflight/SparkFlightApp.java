@@ -54,7 +54,7 @@ public class SparkFlightApp {
 
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-
+        JavaRDD<String> airports = dataPrepare(sc, args[2]);
         JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable> flightRDD = flightToPair(flights);
         JavaPairRDD<Integer, String> airportRDD = airportToPair(airports);
 
