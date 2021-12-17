@@ -32,7 +32,7 @@ public class StatContainer implements Serializable {
 
 
 
-
+    public static StatContainer addValue(StatContainer a, float max, boolean cancelled, float delayed) {
 
 
                 a.getDelayed() + (delayed > 0 ? 1 : 0),
