@@ -79,7 +79,7 @@ public class SparkFlightApp {
 //                })
 
                 (statContainer, y) -> StatContainer.addValue(statContainer,
-
+                                                            y.getDelay(),
 
 
 
