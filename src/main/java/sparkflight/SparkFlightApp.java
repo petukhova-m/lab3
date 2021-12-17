@@ -18,7 +18,7 @@ public class SparkFlightApp {
 
 
     private static final String QUOTE = "\"";
-
+    private static JavaRDD<String> dataPrepare(JavaSparkContext sc, String arg) {
 
 
         data = data.filter(x -> !x.equals(dataHeader));
