@@ -67,7 +67,7 @@ public class SparkFlightApp {
 //                    float delay;
 //                    for (FlightSerializable flight : flightsArray) {
 //                        cancelledCounter += (flight.isCancelled()) ? 1 : Constants.ZERO;
-
+//                        delay = flight.getDelay();
 //
 //                        if (delay > Constants.ZERO) {
 //                            max = Float.max(max, delay);
