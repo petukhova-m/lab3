@@ -69,7 +69,7 @@ public class SparkFlightApp {
 //                        cancelledCounter += (flight.isCancelled()) ? 1 : Constants.ZERO;
 
 //
-
+//                        if (delay > Constants.ZERO) {
 //                            max = Float.max(max, delay);
 //                            delayedCounter++;
 //                        }
