@@ -42,7 +42,7 @@ public class SparkFlightApp {
     }
 
         return airport.mapToPair(
-
+                line -> {
                     String[] data = line.split(AIRPORT_DELIMITER);
                     int code = Integer.parseInt(deleteSymbol(data[Constants.CODE], QUOTE));
                     String description = deleteSymbol(data[Constants.DESCRIPTION], QUOTE);
