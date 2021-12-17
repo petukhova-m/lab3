@@ -29,7 +29,7 @@ public class SparkFlightApp {
     }
     private static JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable> flightToPair(JavaRDD<String> flights) {
         return flights.mapToPair(
-
+                line -> {
                     String[] data = line.split(FLIGHT_DELIMITER);
                     int destinationAirport = Integer.parseInt(deleteSymbol(data[Constants.DESTINATION_AIRPORT_ID], QUOTE));
                     float delay = data[Constants.ARR_DELAY].length() > 0 ? Float.parseFloat(data[Constants.ARR_DELAY]) : Constants.ZERO;
