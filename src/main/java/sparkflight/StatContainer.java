@@ -16,7 +16,7 @@ public class StatContainer implements Serializable {
 
     public int getCancelled() {
         return cancelled;
-
+    }
 
     public int getDelayed() {
 
