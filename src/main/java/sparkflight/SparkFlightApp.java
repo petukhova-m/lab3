@@ -82,7 +82,7 @@ public class SparkFlightApp {
                                                             y.getDelay(),
                                                             y.isCancelled(),
 
-
+                StatContainer::add
 
                     Tuple2<Integer, Integer> flightKey = flight._1;
                     Map<Integer, String> value = airportBroadcasted.value();
