@@ -11,7 +11,7 @@ import scala.Serializable;
         this.originAirportId = originAirportId;
         this.destinationAirportId = destinationAirportId;
         this.delay = delay;
-
+        this.cancelled = cancelled;
     }
 
     private float delay = 0;
