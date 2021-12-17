@@ -13,7 +13,7 @@ import java.util.Iterator;
 import static scala.None.iterator;
 
 public class SparkFlightApp {
-
+    private static final String AIRPORT_DELIMITER = ",\"";
     private static final String FLIGHT_DELIMITER = ",";
 
 
