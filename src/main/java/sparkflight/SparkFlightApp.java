@@ -59,7 +59,7 @@ public class SparkFlightApp {
         JavaPairRDD<Integer, String> airportRDD = airportToPair(airports);
 
 //        flightRDD.groupByKey().mapValues(
-
+//                flightsArray ->{
 //                    float cancelledCounter = Constants.ZERO;
 //                    float delayedCounter = Constants.ZERO;
 //                    float max = Float.MIN_VALUE;
