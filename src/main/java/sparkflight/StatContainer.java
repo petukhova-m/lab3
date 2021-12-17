@@ -30,7 +30,7 @@ public class StatContainer implements Serializable {
         this.max = max;
         this.cancelled = cancelled;
         this.delayed = delayed;
-
+        this.counter = counter;
     }
     public static StatContainer addValue(StatContainer a, float max, boolean cancelled, float delayed) {
 
