@@ -35,7 +35,7 @@ public class StatContainer implements Serializable {
     public static StatContainer addValue(StatContainer a, float max, boolean cancelled, float delayed) {
         return new StatContainer(Float.max(a.getMax(), max),
                 a.getCancelled() +  (cancelled ? 1 : 0),
-                a.getDelayed() + (delayed > 0 ? 1 : 0),
+
                 a.getCounter() + 1);
     }
     public static StatContainer add(StatContainer a, StatContainer b) {
