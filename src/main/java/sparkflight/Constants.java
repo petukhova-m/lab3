@@ -4,7 +4,7 @@ public class Constants {
     public static final int DESTINATION_AIRPORT_ID = 14;
     public static final int ORIGIN_AIRPORT_ID = 11;
 
-
+    public static final int IS_CANCELED = 19;
 
 
 }
