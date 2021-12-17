@@ -27,7 +27,7 @@ public class SparkFlightApp {
     private static String deleteSymbol(String data, String symbol) {
         return data.replaceAll(symbol, "");
     }
-
+    private static JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable> flightToPair(JavaRDD<String> flights) {
         return flights.mapToPair(
 
                     String[] data = line.split(FLIGHT_DELIMITER);
