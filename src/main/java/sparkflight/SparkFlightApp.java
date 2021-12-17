@@ -81,7 +81,7 @@ public class SparkFlightApp {
                 (statContainer, y) -> StatContainer.addValue(statContainer,
                                                             y.getDelay(),
                                                             y.isCancelled(),
-
+                                                            y.getDelay()),
                 StatContainer::add
 
                     Tuple2<Integer, Integer> flightKey = flight._1;
