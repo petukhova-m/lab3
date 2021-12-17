@@ -22,7 +22,7 @@ public class SparkFlightApp {
 
 
         data = data.filter(x -> !x.equals(dataHeader));
-
+        return data;
 
 
 
