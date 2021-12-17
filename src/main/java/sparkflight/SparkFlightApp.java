@@ -23,7 +23,7 @@ public class SparkFlightApp {
         String dataHeader = data.first();
         data = data.filter(x -> !x.equals(dataHeader));
         return data;
-    }
+
     private static String deleteSymbol(String data, String symbol) {
         return data.replaceAll(symbol, "");
     }
