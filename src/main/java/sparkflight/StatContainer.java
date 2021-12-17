@@ -31,7 +31,7 @@ public class StatContainer implements Serializable {
         this.cancelled = cancelled;
 
 
-
+    }
     public static StatContainer addValue(StatContainer a, float max, boolean cancelled, float delayed) {
 
                 a.getCancelled() +  (cancelled ? 1 : 0),
