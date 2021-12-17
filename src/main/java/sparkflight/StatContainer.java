@@ -14,7 +14,7 @@ public class StatContainer implements Serializable {
 
 
 
-
+    public int getCancelled() {
 
 
 
