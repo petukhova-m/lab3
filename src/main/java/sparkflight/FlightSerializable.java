@@ -1,7 +1,7 @@
 
 
 
-import scala.Serializable;
+
 
 
     private Integer originAirportId;
