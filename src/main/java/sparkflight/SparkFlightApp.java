@@ -16,7 +16,7 @@ public class SparkFlightApp {
     private static final String AIRPORT_DELIMITER = ",\"";
     private static final String FLIGHT_DELIMITER = ",";
 
-
+    private static final String RESULTPATTERN = "OriginalAirport: %s, DestinationAirport: %s, %s";
     private static final String QUOTE = "\"";
     private static JavaRDD<String> dataPrepare(JavaSparkContext sc, String arg) {
         JavaRDD<String> data = sc.textFile(arg);
