@@ -1,4 +1,4 @@
-
+package sparkflight;
 
 
 import scala.Serializable;
