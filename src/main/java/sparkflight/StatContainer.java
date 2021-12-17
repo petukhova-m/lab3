@@ -11,7 +11,7 @@ public class StatContainer implements Serializable {
 
 
     public float getMax() {
-
+        return max;
     }
 
     public int getCancelled() {
