@@ -36,7 +36,7 @@ public class SparkFlightApp {
 
 
                     return new Tuple2<>(new Tuple2<>(originAirport, destinationAirport),
-
+                            new FlightSerializable(originAirport, destinationAirport, delay, cancelled));
 
 
 
