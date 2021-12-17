@@ -52,31 +52,12 @@ public class SparkFlightApp {
     }
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
-
+        JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = dataPrepare(sc, args[1]);
         JavaRDD<String> airports = dataPrepare(sc, args[2]);
         JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable> flightRDD = flightToPair(flights);
         JavaPairRDD<Integer, String> airportRDD = airportToPair(airports);
         final Broadcast<Map<Integer, String>> airportBroadcasted = sc.broadcast(airportRDD.collectAsMap());
-//        flightRDD.groupByKey().mapValues(
-//                flightsArray ->{
-//                    float cancelledCounter = Constants.ZERO;
-//                    float delayedCounter = Constants.ZERO;
-//                    float max = Float.MIN_VALUE;
-//                    int counter = Constants.ZERO;
-//                    float delay;
-//                    for (FlightSerializable flight : flightsArray) {
-//                        cancelledCounter += (flight.isCancelled()) ? 1 : Constants.ZERO;
-//                        delay = flight.getDelay();
-//
-//                        if (delay > Constants.ZERO) {
-//                            max = Float.max(max, delay);
-//                            delayedCounter++;
-//                        }
-//                        counter++;
-//                    }
-//                    return String.format(PATTERN, max, cancelledCounter / counter * 100,    delayedCounter / counter * 100);
-//                })
         flightRDD.combineByKey(x -> new StatContainer(x.getDelay(), x.isCancelled() ? 1 : 0, (int) x.getDelay(), 1),
                 (statContainer, y) -> StatContainer.addValue(statContainer,
                                                             y.getDelay(),
