@@ -3,7 +3,7 @@ package sparkflight;
 
 
 
-
+public class FlightSerializable implements Serializable {
     private Integer originAirportId;
     private Integer destinationAirportId;
 
