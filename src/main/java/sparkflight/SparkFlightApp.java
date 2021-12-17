@@ -75,7 +75,7 @@ public class SparkFlightApp {
 //                        }
 //                        counter++;
 //                    }
-
+//                    return String.format(PATTERN, max, cancelledCounter / counter * 100,    delayedCounter / counter * 100);
 //                })
         flightRDD.combineByKey(x -> new StatContainer(x.getDelay(), x.isCancelled() ? 1 : 0, (int) x.getDelay(), 1),
                 (statContainer, y) -> StatContainer.addValue(statContainer,
