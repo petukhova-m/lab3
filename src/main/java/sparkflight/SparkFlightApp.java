@@ -40,7 +40,7 @@ public class SparkFlightApp {
 
         );
     }
-
+    private static JavaPairRDD<Integer, String> airportToPair(JavaRDD<String> airport) {
         return airport.mapToPair(
                 line -> {
                     String[] data = line.split(AIRPORT_DELIMITER);
