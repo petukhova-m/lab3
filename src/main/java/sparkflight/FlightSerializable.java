@@ -27,7 +27,7 @@ public class FlightSerializable implements Serializable {
 
     public float getDelay() {
         return delay;
-
+    }
 
     public boolean isCancelled() {
         return cancelled;
