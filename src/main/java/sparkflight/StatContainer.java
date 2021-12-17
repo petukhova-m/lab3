@@ -41,7 +41,7 @@ public class StatContainer implements Serializable {
     public static StatContainer add(StatContainer a, StatContainer b) {
 
                 a.getCancelled() + b.getCancelled(),
-
+                a.getDelayed() + b.getDelayed(),
 
     }
     public String compareStat() {
