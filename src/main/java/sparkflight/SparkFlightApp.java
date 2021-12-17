@@ -50,7 +50,7 @@ public class SparkFlightApp {
 
         );
 
-
+    public static void main(String[] args) {
 
 
 
