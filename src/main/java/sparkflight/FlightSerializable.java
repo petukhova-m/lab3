@@ -30,7 +30,7 @@ package sparkflight;
     }
 
     public boolean isCancelled() {
-        return cancelled;
+
     }
 
 }
