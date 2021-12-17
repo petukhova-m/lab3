@@ -57,7 +57,7 @@ public class SparkFlightApp {
         JavaRDD<String> airports = dataPrepare(sc, args[2]);
         JavaPairRDD<Tuple2<Integer, Integer>, FlightSerializable> flightRDD = flightToPair(flights);
         JavaPairRDD<Integer, String> airportRDD = airportToPair(airports);
-
+        final Broadcast<Map<Integer, String>> airportBroadcasted = sc.broadcast(airportRDD.collectAsMap());
 //        flightRDD.groupByKey().mapValues(
 //                flightsArray ->{
 //                    float cancelledCounter = Constants.ZERO;
