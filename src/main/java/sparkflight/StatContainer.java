@@ -22,7 +22,7 @@ public class StatContainer implements Serializable {
 
     }
 
-
+    public int getCounter() {
         return counter;
 
 
