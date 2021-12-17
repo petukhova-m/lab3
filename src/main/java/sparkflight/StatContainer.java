@@ -11,7 +11,7 @@ public class StatContainer implements Serializable {
 
 
     public float getMax() {
-        return max;
+
     }
 
     public int getCancelled() {
@@ -47,4 +47,4 @@ public class StatContainer implements Serializable {
     public String compareStat() {
         return String.format(PATTERN, max, ((float) cancelled) / counter * 100, ((float) delayed) / counter * 100);
     }
-}
+
