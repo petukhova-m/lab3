@@ -72,7 +72,7 @@ public class SparkFlightApp {
 //                        if (delay > Constants.ZERO) {
 //                            max = Float.max(max, delay);
 //                            delayedCounter++;
-
+//                        }
 //                        counter++;
 //                    }
 //                    return String.format(PATTERN, max, cancelledCounter / counter * 100,    delayedCounter / counter * 100);
