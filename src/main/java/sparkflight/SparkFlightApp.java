@@ -44,7 +44,7 @@ public class SparkFlightApp {
 
 
 
-
+                    int code = Integer.parseInt(deleteSymbol(data[Constants.CODE], QUOTE));
 
 
 
