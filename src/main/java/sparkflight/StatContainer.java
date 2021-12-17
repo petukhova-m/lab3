@@ -45,6 +45,6 @@ public class StatContainer implements Serializable {
 
     }
     public String compareStat() {
-
+        return String.format(PATTERN, max, ((float) cancelled) / counter * 100, ((float) delayed) / counter * 100);
     }
 }
