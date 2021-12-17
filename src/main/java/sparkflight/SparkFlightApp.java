@@ -89,5 +89,5 @@ public class SparkFlightApp {
                     return String.format(RESULTPATTERN, value.get(flightKey._1), value.get(flightKey._2), flight._2.compareStat());
                 }).saveAsTextFile(args[0]);
 
-
+    }
 }
