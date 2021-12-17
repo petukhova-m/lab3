@@ -14,7 +14,7 @@ public class FlightSerializable implements Serializable {
         this.cancelled = cancelled;
     }
 
-    private float delay = 0;
+
     private boolean cancelled = false;
 
     public Integer getDestinationAirportId() {

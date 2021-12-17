@@ -20,7 +20,7 @@ public class StatContainer implements Serializable {
 
     public int getDelayed() {
         return delayed;
-    }
+
 
     public int getCounter() {
         return counter;
