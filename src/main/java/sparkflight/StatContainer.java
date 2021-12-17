@@ -44,7 +44,7 @@ public class StatContainer implements Serializable {
 
 
 
-
+    public String compareStat() {
 
     }
 }
