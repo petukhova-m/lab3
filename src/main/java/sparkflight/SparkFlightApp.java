@@ -34,7 +34,7 @@ public class SparkFlightApp {
 
                     float delay = data[Constants.ARR_DELAY].length() > 0 ? Float.parseFloat(data[Constants.ARR_DELAY]) : Constants.ZERO;
                     boolean cancelled = Float.parseFloat(data[Constants.IS_CANCELED]) == 1;
-
+                    int originAirport = Integer.parseInt(deleteSymbol(data[Constants.ORIGIN_AIRPORT_ID], QUOTE));
                     return new Tuple2<>(new Tuple2<>(originAirport, destinationAirport),
                             new FlightSerializable(originAirport, destinationAirport, delay, cancelled));
 
