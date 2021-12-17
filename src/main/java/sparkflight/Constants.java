@@ -6,5 +6,5 @@
 
 
 
-
+    public static final int CODE = 0;
 }
