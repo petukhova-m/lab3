@@ -10,7 +10,7 @@ public class StatContainer implements Serializable {
     private static final String PATTERN = "MaxDelay: %f, CancelledPercent: %f, DelayedPercent: %f";
 
 
-    public float getMax() {
+
         return max;
     }
 
