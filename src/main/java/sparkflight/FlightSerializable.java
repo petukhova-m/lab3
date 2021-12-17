@@ -30,7 +30,7 @@
     }
 
     public boolean isCancelled() {
-
+        return cancelled;
     }
 
 }
