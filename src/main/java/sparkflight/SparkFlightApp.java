@@ -84,7 +84,7 @@ public class SparkFlightApp {
 
 
 
-
+                    Tuple2<Integer, Integer> flightKey = flight._1;
 
 
 
