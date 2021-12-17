@@ -62,7 +62,7 @@ public class SparkFlightApp {
 
 
 //                    float delayedCounter = Constants.ZERO;
-
+//                    float max = Float.MIN_VALUE;
 
 
 
