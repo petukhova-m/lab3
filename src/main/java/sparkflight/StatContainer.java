@@ -42,7 +42,7 @@ public class StatContainer implements Serializable {
         return new StatContainer(Float.max(a.getMax(), b.getMax()),
                 a.getCancelled() + b.getCancelled(),
                 a.getDelayed() + b.getDelayed(),
-
+                a.getCounter() + b.getCounter());
     }
     public String compareStat() {
         return String.format(PATTERN, max, ((float) cancelled) / counter * 100, ((float) delayed) / counter * 100);
