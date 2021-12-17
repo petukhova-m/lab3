@@ -1,7 +1,7 @@
 
 
 
-
+import scala.Serializable;
 
 public class FlightSerializable implements Serializable {
 
