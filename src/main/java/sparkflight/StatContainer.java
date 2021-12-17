@@ -28,7 +28,7 @@ public class StatContainer implements Serializable {
 
 
 
-
+        this.cancelled = cancelled;
 
 
 
