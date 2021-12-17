@@ -22,7 +22,7 @@ public class FlightSerializable implements Serializable {
 
 
     public Integer getOriginAirportId() {
-
+        return originAirportId;
 
 
     public float getDelay() {
