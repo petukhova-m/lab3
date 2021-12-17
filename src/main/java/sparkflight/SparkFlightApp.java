@@ -65,7 +65,7 @@ public class SparkFlightApp {
 //                    float max = Float.MIN_VALUE;
 
 
-
+//                    for (FlightSerializable flight : flightsArray) {
 
 
 
