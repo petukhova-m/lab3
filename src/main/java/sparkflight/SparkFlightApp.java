@@ -35,7 +35,7 @@ public class SparkFlightApp {
                     float delay = data[Constants.ARR_DELAY].length() > 0 ? Float.parseFloat(data[Constants.ARR_DELAY]) : Constants.ZERO;
 
 
-
+                    return new Tuple2<>(new Tuple2<>(originAirport, destinationAirport),
 
 
 
