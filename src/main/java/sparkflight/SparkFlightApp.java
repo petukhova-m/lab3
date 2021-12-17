@@ -58,7 +58,7 @@ public class SparkFlightApp {
 
 
 
-
+//        flightRDD.groupByKey().mapValues(
 
 
 //                    float delayedCounter = Constants.ZERO;
