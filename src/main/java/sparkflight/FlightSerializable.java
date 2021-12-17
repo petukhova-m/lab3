@@ -21,7 +21,7 @@ public class FlightSerializable implements Serializable {
 
 
 
-
+    public Integer getOriginAirportId() {
 
 
 
