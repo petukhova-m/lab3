@@ -1,6 +1,6 @@
 
 
-
+import java.io.Serializable;
 
 public class StatContainer implements Serializable {
 
