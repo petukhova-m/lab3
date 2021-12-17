@@ -30,7 +30,7 @@ public class FlightSerializable implements Serializable {
     }
 
     public boolean isCancelled() {
-
+        return cancelled;
     }
 
 }
