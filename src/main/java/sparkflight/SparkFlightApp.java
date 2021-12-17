@@ -46,7 +46,7 @@ public class SparkFlightApp {
 
                     int code = Integer.parseInt(deleteSymbol(data[Constants.CODE], QUOTE));
 
-
+                    return new Tuple2<>(code, description);
 
         );
 
