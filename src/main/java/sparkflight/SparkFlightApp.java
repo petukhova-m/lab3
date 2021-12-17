@@ -37,7 +37,7 @@ public class SparkFlightApp {
                     int originAirport = Integer.parseInt(deleteSymbol(data[Constants.ORIGIN_AIRPORT_ID], QUOTE));
                     return new Tuple2<>(new Tuple2<>(originAirport, destinationAirport),
                             new FlightSerializable(originAirport, destinationAirport, delay, cancelled));
-                }
+
         );
     }
     private static JavaPairRDD<Integer, String> airportToPair(JavaRDD<String> airport) {
