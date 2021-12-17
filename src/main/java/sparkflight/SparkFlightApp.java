@@ -80,7 +80,7 @@ public class SparkFlightApp {
         flightRDD.combineByKey(x -> new StatContainer(x.getDelay(), x.isCancelled() ? 1 : 0, (int) x.getDelay(), 1),
                 (statContainer, y) -> StatContainer.addValue(statContainer,
                                                             y.getDelay(),
-
+                                                            y.isCancelled(),
 
 
 
