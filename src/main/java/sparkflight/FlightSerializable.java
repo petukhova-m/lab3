@@ -18,7 +18,7 @@ public class FlightSerializable implements Serializable {
     private boolean cancelled = false;
 
     public Integer getDestinationAirportId() {
-
+        return destinationAirportId;
 
 
     public Integer getOriginAirportId() {
