@@ -30,7 +30,7 @@ public class SparkFlightApp {
 
         return flights.mapToPair(
 
-
+                    String[] data = line.split(FLIGHT_DELIMITER);
 
                     float delay = data[Constants.ARR_DELAY].length() > 0 ? Float.parseFloat(data[Constants.ARR_DELAY]) : Constants.ZERO;
                     boolean cancelled = Float.parseFloat(data[Constants.IS_CANCELED]) == 1;
