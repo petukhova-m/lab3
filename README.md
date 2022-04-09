@@ -1,1 +1,1 @@
-# lab3
+# Distributed and parallel programs
